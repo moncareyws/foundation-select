@@ -1,6 +1,9 @@
-# Dependency directories
+# Dependencies
 node_modules
-bower_components
+package-lock.json
 
 # Logs
 npm-debug.log
+
+#IDE settings
+.idea

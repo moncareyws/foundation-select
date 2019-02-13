@@ -2,31 +2,25 @@
 
 Select plugin for Foundation sites 6
 
-[![Travis](https://img.shields.io/travis/samuelmc/foundation-select.svg)](https://travis-ci.org/samuelmc/foundation-select)
-
 ## Installation
 
-**With bower:**
-
-[![Bower](https://img.shields.io/bower/v/foundation-select.svg)]()
-
 ```shell
-bower install --save foundation-select
+npm install --save @moncareyws/foundation-select
 ```
 
 Add all nessesary files to your html. This plugin only works with foundation and requires foundation-perfect-scrollbar and font-awesome.
 ```html
-<link rel="stylesheet" type="text/css" href="bower_components/foundation-sites/dist/css/foundation.min.css"> 
-<link rel="stylesheet" type="text/css" href="bower_components/foundation-perfect-scrollbar/dist/css/foundation-perfect-scrollbar.min.css">
-<link rel="stylesheet" type="text/css" href="bower_components/foundation-select/dist/css/foundation-select.min.css">
-<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="node_modules/foundation-sites/dist/css/foundation.min.css"> 
+<link rel="stylesheet" type="text/css" href="node_modules/@moncareyws/foundation-perfect-scrollbar/dist/css/foundation-perfect-scrollbar.min.css">
+<link rel="stylesheet" type="text/css" href="node_modules/@moncareyws/foundation-select/dist/css/foundation-select.min.css">
+<link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 ...
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/what-input/dist/what-input.js"></script>
-<script src="bower_components/foundation-sites/dist/js/foundation.min.js"></script>
-<script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
-<script src="bower_components/foundation-perfect-scrollbar/dist/js/foundation.perfectScrollbar.min.js"></script>
-<script src="bower_components/foundation-select/dist/js/foundation.select.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/what-input/dist/what-input.js"></script>
+<script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+<script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+<script src="node_modules/@moncareyws/foundation-perfect-scrollbar/dist/js/foundation.perfectScrollbar.min.js"></script>
+<script src="node_modules/@moncareyws/foundation-select/dist/js/foundation.select.min.js"></script>
 ```
 
 If you are using foundation's scss with gulp, the best way add the styles is by adding it to the sass paths in your gulpfile.
@@ -35,12 +29,11 @@ var gulp = require('gulp');
 var $    = require('gulp-load-plugins')();
 
 var sassPaths = [
-    'bower_components/normalize.scss/sass',
-    'bower_components/foundation-sites/scss',
-    'bower_components/foundation-perfect-scrollbar/src/scss/plugin',
-    'bower_components/foundation-select/src/scss/plugin',
-    'bower_components/motion-ui/src',
-    'bower_components/font-awesome/scss'
+    'node_modules/foundation-sites/scss',
+    'node_modules/motion-ui/src',
+    'node_modules/@moncareyws/foundation-perfect-scrollbar/src/scss/plugin',
+    'node_modules/@moncareyws/foundation-select/src/scss/plugin',
+    'node_modules/@fortawesome/fontawesome-free/scss'
 ];
 
 gulp.task('sass', function() {
@@ -84,5 +77,3 @@ $(document).foundation();
 
 ## Licence
 [![MIT Licence](https://img.shields.io/badge/Licence-MIT-blue.svg)](https://opensource.org/licenses/mit-license.php)
-
-&copy; Samuel Moncarey

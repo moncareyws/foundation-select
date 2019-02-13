@@ -1,6 +1,6 @@
 {
   "name": "@moncareyws/foundation-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Select plugin for Foundation sites 6",
   "main": "src/js/foundation.select.js",
   "scripts": {
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",
-    "@moncareyws/foundation-perfect-scrollbar": "^1.0.1",
+    "@moncareyws/foundation-perfect-scrollbar": "^1.0.2",
     "foundation-sites": "^6.5.3",
     "jquery": "^3.3.1",
     "what-input": "^5.1.3"
